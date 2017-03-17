@@ -1,0 +1,6 @@
+*.mm
+xcuserdata
+*.xcuserdatad
+xcshareddata
+LatestBuild
+Packages

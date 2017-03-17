@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43599CBE1E7B8EAA009779ED /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43599CBD1E7B8EAA009779ED /* CydiaSubstrate.framework */; };
+		436FE7BC1D93CF0B0024AC55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436FE7BB1D93CF0B0024AC55 /* Foundation.framework */; };
+		436FE7C71D93CF0B0024AC55 /* reveal2Loader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 436FE7C61D93CF0B0024AC55 /* reveal2Loader.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43599CB71E7B8D52009779ED /* reveal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@2x.png"; sourceTree = "<group>"; };
+		43599CB81E7B8D52009779ED /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-logo@3x.png"; sourceTree = "<group>"; };
+		43599CB91E7B8D52009779ED /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Reveal2Loader.plist; sourceTree = "<group>"; };
+		43599CBD1E7B8EAA009779ED /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = ../../../../opt/iOSOpenDev/frameworks/CydiaSubstrate.framework; sourceTree = "<group>"; };
+		43599CBF1E7B8EC7009779ED /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
+		436FE7B81D93CF0B0024AC55 /* reveal2Loader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = reveal2Loader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		436FE7BB1D93CF0B0024AC55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		436FE7C11D93CF0B0024AC55 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		436FE7C31D93CF0B0024AC55 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		436FE7C41D93CF0B0024AC55 /* reveal2Loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reveal2Loader-Prefix.pch"; sourceTree = "<group>"; };
+		436FE7C51D93CF0B0024AC55 /* reveal2Loader.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = reveal2Loader.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		436FE7C61D93CF0B0024AC55 /* reveal2Loader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = reveal2Loader.mm; sourceTree = "<group>"; };
+		436FE7CB1D93CF0B0024AC55 /* reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = reveal2Loader.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/reveal2Loader.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		436FE7B41D93CF0B0024AC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436FE7BC1D93CF0B0024AC55 /* Foundation.framework in Frameworks */,
+				43599CBE1E7B8EAA009779ED /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43599CB51E7B8D52009779ED /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				43599CB61E7B8D52009779ED /* Preferences */,
+			);
+			name = PreferenceLoader;
+			path = Package/Library/PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		43599CB61E7B8D52009779ED /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				43599CB71E7B8D52009779ED /* reveal-logo@2x.png */,
+				43599CB81E7B8D52009779ED /* reveal-logo@3x.png */,
+				43599CB91E7B8D52009779ED /* Reveal2Loader.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		43599CBA1E7B8D71009779ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43599CBF1E7B8EC7009779ED /* RevealServer.framework */,
+			);
+			name = Frameworks;
+			path = Package/Library/Frameworks;
+			sourceTree = "<group>";
+		};
+		436FE7AD1D93CF0B0024AC55 = {
+			isa = PBXGroup;
+			children = (
+				436FE7BD1D93CF0B0024AC55 /* reveal2Loader */,
+				436FE7BA1D93CF0B0024AC55 /* Frameworks */,
+				436FE7B91D93CF0B0024AC55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		436FE7B91D93CF0B0024AC55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7B81D93CF0B0024AC55 /* reveal2Loader.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		436FE7BA1D93CF0B0024AC55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43599CBD1E7B8EAA009779ED /* CydiaSubstrate.framework */,
+				436FE7BB1D93CF0B0024AC55 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		436FE7BD1D93CF0B0024AC55 /* reveal2Loader */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7C51D93CF0B0024AC55 /* reveal2Loader.xm */,
+				436FE7C61D93CF0B0024AC55 /* reveal2Loader.mm */,
+				436FE7BE1D93CF0B0024AC55 /* Package */,
+				436FE7C21D93CF0B0024AC55 /* Supporting Files */,
+			);
+			path = reveal2Loader;
+			sourceTree = "<group>";
+		};
+		436FE7BE1D93CF0B0024AC55 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7BF1D93CF0B0024AC55 /* DEBIAN */,
+				436FE7C81D93CF0B0024AC55 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		436FE7BF1D93CF0B0024AC55 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7C11D93CF0B0024AC55 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		436FE7C21D93CF0B0024AC55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7C31D93CF0B0024AC55 /* PackageVersion.plist */,
+				436FE7C41D93CF0B0024AC55 /* reveal2Loader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		436FE7C81D93CF0B0024AC55 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				43599CBA1E7B8D71009779ED /* Frameworks */,
+				43599CB51E7B8D52009779ED /* PreferenceLoader */,
+				436FE7C91D93CF0B0024AC55 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		436FE7C91D93CF0B0024AC55 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7CA1D93CF0B0024AC55 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		436FE7CA1D93CF0B0024AC55 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				436FE7CB1D93CF0B0024AC55 /* reveal2Loader.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		436FE7B51D93CF0B0024AC55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		436FE7B71D93CF0B0024AC55 /* reveal2Loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 436FE7CE1D93CF0B0024AC55 /* Build configuration list for PBXNativeTarget "reveal2Loader" */;
+			buildPhases = (
+				436FE7B21D93CF0B0024AC55 /* ShellScript */,
+				436FE7B31D93CF0B0024AC55 /* Sources */,
+				436FE7B41D93CF0B0024AC55 /* Frameworks */,
+				436FE7B51D93CF0B0024AC55 /* Headers */,
+				436FE7B61D93CF0B0024AC55 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = reveal2Loader;
+			productName = reveal2Loader;
+			productReference = 436FE7B81D93CF0B0024AC55 /* reveal2Loader.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		436FE7AE1D93CF0B0024AC55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					436FE7B71D93CF0B0024AC55 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 436FE7B11D93CF0B0024AC55 /* Build configuration list for PBXProject "reveal2Loader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 436FE7AD1D93CF0B0024AC55;
+			productRefGroup = 436FE7B91D93CF0B0024AC55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				436FE7B71D93CF0B0024AC55 /* reveal2Loader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		436FE7B21D93CF0B0024AC55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		436FE7B61D93CF0B0024AC55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		436FE7B31D93CF0B0024AC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436FE7C71D93CF0B0024AC55 /* reveal2Loader.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		436FE7CC1D93CF0B0024AC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		436FE7CD1D93CF0B0024AC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		436FE7CF1D93CF0B0024AC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/iOSOpenDev/frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "reveal2Loader/reveal2Loader-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		436FE7D01D93CF0B0024AC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/iOSOpenDev/frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "reveal2Loader/reveal2Loader-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		436FE7B11D93CF0B0024AC55 /* Build configuration list for PBXProject "reveal2Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436FE7CC1D93CF0B0024AC55 /* Debug */,
+				436FE7CD1D93CF0B0024AC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		436FE7CE1D93CF0B0024AC55 /* Build configuration list for PBXNativeTarget "reveal2Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				436FE7CF1D93CF0B0024AC55 /* Debug */,
+				436FE7D01D93CF0B0024AC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 436FE7AE1D93CF0B0024AC55 /* Project object */;
+}
